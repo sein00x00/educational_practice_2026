@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/light-theme.css" />
+  <link rel="stylesheet" href="/css/dark-theme.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/icons/bootstrap-icons-1.13.1/bootstrap-icons.css" />
+</head>
+
+<body style="overflow-x: hidden;" class="container-fluid">
+  <div class="row">
+    <div class="col-2 d-none d-md-block"></div>
+    <div class="navMenu desktop-nav p-0 col-2 position-fixed top-0 start-0 vh-100 d-none d-md-block"
+      style="min-width: 128px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <span class="textAdmin fs-5 d-flex justify-content-center align-items-center"
+          style="height: 55px">Админ-панель</span>
+      </a>
+
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active d-flex align-items-center me-0 ms-0 w-100">
+            <i class="bi bi-house fs-4 me-3"></i>
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="users-table.html" class="nav-link d-flex align-items-center">
+            <i class="bi bi-people fs-4 me-3"></i>
+            Пользователи
+          </a>
+        </li>
+        <li>
+          <a href="orders-table.html" class="nav-link d-flex align-items-center">
+            <i class="bi bi-clipboard fs-4 me-3"></i>
+            Список заказов
+          </a>
+        </li>
+        <li>
+          <a href="products-table.html" class="nav-link d-flex align-items-center">
+            <i class="bi bi-copy fs-4 me-3"></i>
+            Список товаров
+          </a>
+        </li>
+        <li>
+          <a href="auth.html" class="exit-te nav-link d-flex align-items-center">
+            <i class="bi bi-box-arrow-right fs-4 me-3"></i>
+            Выйти
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content col-12 col-md-10 p-0">
+
+
+      <header class="head p-2 d-none d-md-block">
+        <div class="d-flex justify-content-end pe-2">
+          <button class=" toggle btn-moon p-0 me-3 d-none d-md-block bc-white">
+            <i class="moon-icon bi bi-moon-stars" style="font-size: 26px"></i>
+          </button>
+          <i class="notification-icon bi bi-bell" style="font-size: 26px"></i>
+          <i class="ava-icon bi bi-emoji-astonished-fill ms-3 me-2" style="font-size: 26px"></i>
+          <p class="name-ic-te mt-1 mb-0 fs-5">Sein00x0</p>
+        </div>
+      </header>
+
+
+      <nav class="navbar d-md-none px-3 py-2">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="burg-icon bi bi-list fs-1"></i>
+          </button>
+          <div class="d-flex align-items-center gap-3">
+            <h5 class="textAdmin mb-0">Админ-панель</h5>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <i class="notification-icon bi bi-bell fs-3"></i>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- бургер -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+          <ul class="nav nav-pills flex-column p-3">
+            <li class="nav-item mb-2">
+              <a href="index.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-house fs-4 me-3"></i>
+                Главная
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="users-table.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-people fs-4 me-3"></i>
+                Пользователи
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="orders-table.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-clipboard fs-4 me-3"></i>
+                Список заказов
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="products-table.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-copy fs-4 me-3"></i>
+                Список товаров
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="auth.html" class="exit-te nav-link d-flex align-items-center py-2">
+                <i class="bi bi-box-arrow-right fs-4 me-3"></i>
+                Выйти
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="offcanvas-podwal border-top">
+          <div class="d-flex justify-content-between align-items-center p-2">
+            <div class="d-flex align-items-center gap-2 ms-2">
+              <i class="ava-icon bi bi-emoji-astonished-fill" style="font-size: 26px"></i>
+              <p class="name-ic-te mb-0 fs-5">Sein00x0</p>
+            </div>
+            <div>
+              <button class="toggle btn-moon p-0 me-2">
+                <i class="moon-icon bi bi-moon-stars" style="font-size: 26px"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main>
+
+        <div class="p-3 d-flex justify-content-center h-25">
+          <div class="pt-4" style="width: 1480px;">
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6 col-xl-3">
+                <div class="cardPurple card" style="height: 180px">
+                  <img class="people-fon position-absolute end-0 top-50 me-2 mt-3 translate-middle-y opacity-25"
+                    src="/icons/people-fill.svg" alt="" style="width: 160px; height: 160px; ">
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-white fw-normal">Новые пользователи</h5>
+                    <div class="mt-auto">
+
+                      <div class="position-relative d-inline-flex ms-4 mt-1">
+                        <img src="/icons/Ellipse 41.svg" alt="" style="width: 70px; height: 70px;">
+                        <span class="position-absolute top-50 start-50 translate-middle text-white fs-2">34</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-6 col-xl-3">
+                <div class="cardOrange card" style="height: 180px">
+                  <img class="position-absolute end-0 top-50 me-2 mt-3 translate-middle-y opacity-25"
+                    src="/icons/money-mini.svg" alt="" style="width: 150px; height: 150px; ">
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-white fw-normal">Продажи за день</h5>
+                    <div class="d-flex align-items-center ms-4 mt-4">
+                      <p class="card-text text-white fs-2 mb-0">25 788 ₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xl-3">
+                <div class="card-dop card" style="height: 180px">
+                  <img class="people-fon position-absolute end-0 top-50 me-2 mt-3 translate-middle-y opacity-25"
+                    src="/icons/money-big.svg" alt="" style="width: 130px; height: 130px; ">
+                  <div class="card-body">
+                    <h5 class="cardT card-title text-center">Общая сумма продаж</h5>
+                    <div class="d-flex align-items-center ms-4 mt-4">
+                      <p class="cardT card-text fs-2 mb-0">987 344 ₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xl-3">
+                <div class="card-dop card" style="height: 180px">
+                  <img class="people-fon position-absolute start-50 top-50 translate-middle opacity-25"
+                    src="/icons/orda.svg" alt="" style="width: 85px; height: 85px; ">
+                  <div class="card-body text-center ">
+                    <h5 class="cardT card-title">Все пользователи</h5>
+                    <div class="pt-4">
+                      <p class="cardT card-text fs-2">456</p>
+                    </div>
+
+
+                    <div class="text-center mt-3 mt-sm-3 mt-lg-3 mt-xs-4">
+                      <a href="/users-table.html" class="cardB btn text-decoration-none"
+                        style="width: 160px; line-height: 1.5;">
+                        Подробнее
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-cont p-5 pt-0 pb-0">
+          <p class="last-orders ps-4 fs-4">Последние заказы</p>
+          <div class="ps-2 pe-2 pb-2">
+            <div class="table-responsive">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th class="ps-5" scope="col">ID</th>
+                    <th scope="col">Номер заказа</th>
+                    <th scope="col">Сумма заказа</th>
+                    <th scope="col">Статус заказа</th>
+                    <th scope="col">Дата заказа</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="py-5 ps-5" scope="row">20</th>
+                    <td class="py-5">000 020</td>
+                    <td class="py-5">2 345 ₽</td>
+                    <td class="text-gotovits py-5">Готовится</td>
+                    <td class="pt-5 pb-5">16-01-2026</td>
+                  </tr>
+                  <tr>
+                    <th class="py-5 ps-5" scope="row">19</th>
+                    <td class="py-5">000 019</td>
+                    <td class="py-5">1 201 ₽</td>
+                    <td class="text-ready py-5">Готов</td>
+                    <td class="py-5">16-01-2026</td>
+                  </tr>
+                  <tr>
+                    <th class="py-5 ps-5" scope="row">18</th>
+                    <td class="py-5">000 018</td>
+                    <td class="py-5">684 ₽</td>
+                    <td class="text-zaver py-5">Завершён</td>
+                    <td class="py-5">16-01-2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      <div class="pe-lg-2">
+        <div class="btn-watch-all d-flex justify-content-end mb-4 me-lg-5 me-md-5 me-sm-3 me-3">
+          <button class="button-watch btn" style="width: 220px; height: 40px;">
+            <a class="text-watch-all text-decoration-none" href="/orders-table.html">Посмотреть все</a>
+          </button>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+  <script src="/js/jquery-4.0.0.min"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="/js/theme.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+
+body{
+    background-color: #EDEDED ;
+}
+
+.navMenu{
+    background-color: #CCCCCC;
+}
+
+.cardPurple{
+ background-color: #896FC7;   
+}
+
+.cardOrange{
+    background-color: #F98E23;
+}
+
+header{
+    background-color: #FFFFFF;
+}
+.card-dop{
+    background-color: #FFFFFF;
+}
+
+.name-ic-te{
+    color: #686868;
+}
+
+.moon-icon, .notification-icon, .ava-icon{
+    color: #1E1E1E;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #D9D9D9;
+    color:#1E1E1E;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-link, .nav-link:focus, .nav-link:hover{
+    color: #1E1E1E;
+    font-size: 18px;
+}
+
+.exit-te{
+    color: #757575 ;
+}
+
+
+
+.login-btn{
+ background-color: #F98E23;
+ font-size: 18px;
+}
+
+.login-btn:active, .login-btn:focus, .login-btn:hover{
+    background-color: #cb6a0a !important;
+}
+
+.form-auth{
+    background-color: #FFFFFF;
+    color: #414141;
+    border: 4px solid #C7C7C7;
+    
+}
+.forma{
+    background-color: #FFFFFF;
+    border-color: #D9DDE2;
+}
+
+.textAdmin{
+    color: #040404;
+}
+
+.last-orders{
+    color: #5F5F5F;
+}
+
+.border-butt-pod{
+    color: #fff;
+    background-color: #A7A7A7;
+}
+
+.edit-icon{
+    color: #8B963C;
+}
+
+.trash-icon{
+    color: #973333;
+}
+
+.text-gotovits{
+    color: #F98E23 !important;
+    font-weight: 600;
+}
+
+.text-ready{
+    color: #98A726 !important;
+    font-weight: 600;
+}
+
+
+
+
+.trash-h-icon{
+    color: #77787A;
+}
+
+.eye-icon, .block-icon{
+    color: #77787A;
+}
+
+.search-icon{
+    color: #7C7C7C;
+}
+
+.button-edit{
+  border: 1px solid #9EA3A9;
+  background-color: #FFFFFF;  
+}
+
+.button-trash{
+  border: 1px solid #9EA3A9;
+  background-color: #FFFFFF;  
+}
+
+thead {
+  --bs-table-bg: #D1D7DE;
+  --bs-table-color: #777879; 
+}
+
+tbody {
+  --bs-table-bg: #FFFFFF;
+  --bs-table-color: #; 
+}
+
+tfoot{
+   --bs-table-bg: #FFFFFF;
+}
+
+.trash-all{
+    border: none;
+    background-color: #D1D7DE;
+}
+
+.button-eye{
+  border: 1px solid #9EA3A9;
+  background-color: #FFFFFF;  
+}
+
+.button-block{
+  border: 1px solid #9EA3A9;
+  background-color: #FFFFFF;  
+}
+
+.text-orders-tabl{
+    color: #5F5F5F;
+}
+
+.searchForm{
+    background-color: #FFFFFF;
+    border: none;
+    
+}
+
+.searchForm::placeholder{
+    color: #999999;
+}
+
+.input-group-text{
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.form-check-input{
+    background-color: #FFFFFF;
+}
+
+.offcanvas-header{
+    background-color: #E2E2E2;
+}
+
+.offcanvas-podwal{
+    background-color: #E2E2E2;
+}
+
+.offcanvas-body{
+    background-color: #CCCCCC;
+}
+
+.btn-close {
+    filter: invert(0);
+}
+
+.burg-icon{
+    color: #757575;
+}
+
+.cardT{
+ color:#000000;
+}
+
+.cardH{
+ color:#000000;
+}
+
+.cardB{
+ color:#000000;
+ border: 1px solid #000000 !important;
+ background-color: #ffffff;
+}
+
+.plusB{
+ color:#000000;
+ background-color: #ffffff;  
+}
+
+.text-watch-all{
+    color: #686868;
+}
+
+.button-watch{
+    background-color: #FFFFFF;
+    border: 1px solid #0C0C0C !important;
+}
+
+.btn:hover{
+     background-color: #ebebeb ;
+}
+
+.btn-moon:hover{
+    background-color: transparent !important;
+    color: inherit !important;
+    border: none !important;
+}

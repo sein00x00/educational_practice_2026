@@ -1,0 +1,22 @@
+.border-butt-pod{
+    border: none;
+}
+
+.button-edit{
+  height: 28px;  
+}
+
+.button-trash{
+  height: 28px;  
+}
+
+.pad-header{
+    padding-top:35px !important;
+    padding-bottom: 35px !important;
+}
+
+
+.trash-all{
+    border: none;
+}
+

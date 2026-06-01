@@ -1,0 +1,25 @@
+.d-flex.justify-content-center{
+    height: 100vh;
+    width: 100%;
+}
+
+* {
+    border-radius: 0px !important;
+}
+
+.btn{
+    background-color: none;
+    border: none !important;
+}
+
+
+
+.tr-foot{
+    padding-top:20px !important;
+    padding-bottom: 20px !important;
+}
+
+.navMenu {
+    overflow-x: hidden !important;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/auth.css">
+  <link rel="stylesheet" href="/css/light-theme.css">
+  <link rel="stylesheet" href="/css/dark-theme.css">
+  <link rel="stylesheet" href="/icons/bootstrap-icons-1.13.1/bootstrap-icons.css">
+</head>
+
+<body style="min-height: 100vh;">
+  <main class="container vh-100 d-flex justify-content-center">
+    <span class="toggle btn-moon position-fixed end-0 me-3 mt-2"><i class="moon-icon bi bi-moon-stars"
+        style="font-size: 26px;"></i></span>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 col-lg-8 col-xl-5">
+        <div>
+          <form class="form-auth p-3 d-flex justify-content-center align-items-center flex-column"
+            style="height: 50vh !important;">
+            <h2 class="fs-3 mb-4">Авторизация</h2>
+            <div class="col-9 mb-3 ">
+              <label for="validationCustom01" class="form-label">Логин</label>
+              <input type="text" class="forma form-control" id="validationCustom01" value="" required>
+              <div class="valid-feedback">
+                Все хорошо!
+              </div>
+            </div>
+            <div class="col-9">
+              <label for="exampleInputPassword1" class="form-label">Пароль</label>
+
+              <input type="password" class="forma form-control" placeholder="" id="exampleInputPassword1">
+            </div>
+
+            <button type="button" class="login-btn btn mt-4 col-5"><a href="index.html" class="text-decoration-none"
+                style="color: white">Войти</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/js/jquery-4.0.0.min"></script>
+  <script defer src="/js/theme.js"></script>
+</body>
+
+</html>

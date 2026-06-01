@@ -1,0 +1,12 @@
+
+.table td, 
+.table th {
+  line-height: 3;
+}
+
+@media (max-width: 768px) {
+ .table-cont{
+    padding: 8px !important;
+ }
+
+}

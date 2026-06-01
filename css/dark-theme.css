@@ -1,0 +1,180 @@
+.navMenu{
+    background-color: #373737;
+}
+body{
+    background-color: #111111 ;
+}
+
+header{
+    background-color: #212121;
+}
+
+.card-dop{
+    background-color: #373737;
+}
+
+.name-ic-te{
+    color: #F4F4F4;
+}
+
+.moon-icon, .notification-icon, .ava-icon{
+    color: #B3B3B3;
+}
+
+.form-auth{
+    background-color: #2D2D2D;
+    color: #ffffff;
+    border: 4px solid #000000;
+}
+
+.forma{
+    background-color: #747474;
+    border-color: #111111;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #474747;
+    color:#F4F4F4;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-link, .nav-link:focus, .nav-link:hover{
+    color: #F4F4F4;
+    font-size: 18px;
+}
+
+.trash-h-icon{
+    color: #F4F4F4;
+}
+
+.textAdmin{
+    color: #F4F4F4;
+}
+
+.last-orders{
+    color: #F4F4F4;
+}
+
+.text-orders-tabl{
+    color: #F4F4F4;
+}
+
+.searchForm{
+    background-color: #373737;
+    border: none;
+    
+}
+
+.searchForm::placeholder{
+    color: #F4F4F4;
+}
+
+.input-group-text{
+    background-color: #373737;
+    border: none;
+}
+
+.search-icon{
+    color: #F4F4F4;
+}
+
+thead {
+  --bs-table-bg: #212121;
+  --bs-table-color: #F4F4F4; 
+}
+
+tbody {
+  --bs-table-bg: #373737;
+  --bs-table-color: #F4F4F4; 
+}
+
+tfoot{
+   --bs-table-bg: #373737;
+}
+
+.trash-all{
+    border: none;
+    background-color: #212121;
+}
+
+.form-check-input{
+    background-color: #373737;
+}
+
+.button-eye, .button-block, .button-trash, .button-edit{
+  border: 1px solid #9EA3A9;
+  background-color: #373737;  
+}
+
+.eye-icon, .block-icon{
+    color: #FFFFFF;
+}
+
+.trash-icon{
+    color: #C73D3D;
+}
+
+.border-butt-pod{
+    color: #111111;
+    background-color: #F98E23;
+}
+
+.offcanvas-header{
+    background-color: #212121;
+}
+
+.offcanvas-podwal{
+    background-color: #212121;
+}
+
+.offcanvas-body{
+    background-color: #373737;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.burg-icon{
+    color: #B3B3B3;
+}
+
+.cardT{
+ color:#F4F4F4;
+}
+
+.cardB{
+ color:#111111;
+ background-color:#F98E23 ;
+ border: none;
+}
+
+.plusB{
+ color:#111111;
+ background-color:#F98E23 ;
+ border: none;
+}
+
+.cardH{
+ color:#111111;
+}
+
+.text-watch-all{
+    color: #111111;
+}
+
+.button-watch{
+    background-color: #F98E23;
+    border: 1px solid #111111;
+}
+
+.btn:hover{
+     background-color: #cb6a0a;
+}
+
+.btn-moon, .btn-moon:hover{
+    background-color: transparent !important;
+    color: inherit !important;
+    border: none !important;
+}

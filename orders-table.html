@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/light-theme.css">
+    <link rel="stylesheet" href="/css/dark-theme.css">
+    <link rel="stylesheet" href="/css/orders.css">
+    <link rel="stylesheet" href="/icons/bootstrap-icons-1.13.1/bootstrap-icons.css"/>
+  </head>
+
+
+  <body style="overflow-x: hidden;" class="container-fluid">
+  <div class="row">
+    <div class="col-2 d-none d-md-block"></div>
+    <div class="navMenu desktop-nav p-0 col-2 position-fixed top-0 start-0 vh-100 d-none d-md-block"
+      style="min-width: 128px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <span class="textAdmin fs-5 d-flex justify-content-center align-items-center"
+          style="height: 55px">Админ-панель</span>
+      </a>
+
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link d-flex align-items-center me-0 ms-0 w-100">
+            <i class="bi bi-house fs-4 me-3"></i>
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="users-table.html" class="nav-link d-flex align-items-center">
+            <i class="bi bi-people fs-4 me-3"></i>
+            Пользователи
+          </a>
+        </li>
+        <li>
+          <a href="orders-table.html" class="nav-link active d-flex align-items-center">
+            <i class="bi bi-clipboard fs-4 me-3"></i>
+            Список заказов
+          </a>
+        </li>
+        <li>
+          <a href="products-table.html" class="nav-link d-flex align-items-center">
+            <i class="bi bi-copy fs-4 me-3"></i>
+            Список товаров
+          </a>
+        </li>
+        <li>
+          <a href="auth.html" class="exit-te nav-link d-flex align-items-center">
+            <i class="bi bi-box-arrow-right fs-4 me-3"></i>
+            Выйти
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content col-12 col-md-10 p-0">
+
+
+      <header class="head p-2 d-none d-md-block">
+        <div class="d-flex justify-content-end pe-2">
+          <button class="toggle btn-moon p-0 me-3 d-none d-md-block">
+            <i class="moon-icon bi bi-moon-stars" style="font-size: 26px"></i>
+          </button>
+          <i class="notification-icon bi bi-bell" style="font-size: 26px"></i>
+          <i class="ava-icon bi bi-emoji-astonished-fill ms-3 me-2" style="font-size: 26px"></i>
+          <p class="name-ic-te mt-1 mb-0 fs-5">Sein00x0</p>
+        </div>
+      </header>
+
+
+      <nav class="navbar d-md-none px-3 py-2">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="burg-icon bi bi-list fs-1"></i>
+          </button>
+          <div class="d-flex align-items-center gap-3">
+            <h5 class="textAdmin mb-0">Админ-панель</h5>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <i class="notification-icon bi bi-bell fs-3"></i>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- ьцргер -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+          <ul class="nav nav-pills flex-column p-3">
+            <li class="nav-item mb-2">
+              <a href="index.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-house fs-4 me-3"></i>
+                Главная
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="users-table.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-people fs-4 me-3"></i>
+                Пользователи
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="orders-table.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-clipboard fs-4 me-3"></i>
+                Список заказов
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="products-table.html" class="nav-link d-flex align-items-center py-2">
+                <i class="bi bi-copy fs-4 me-3"></i>
+                Список товаров
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="auth.html" class="exit-te nav-link d-flex align-items-center py-2">
+                <i class="bi bi-box-arrow-right fs-4 me-3"></i>
+                Выйти
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="offcanvas-podwal border-top">
+          <div class="d-flex justify-content-between align-items-center p-2">
+            <div class="d-flex align-items-center gap-2 ms-2">
+              <i class="ava-icon bi bi-emoji-astonished-fill" style="font-size: 26px"></i>
+              <p class="name-ic-te mb-0 fs-5">Sein00x0</p>
+            </div>
+            <div>
+              <button class="toggle btn-moon p-0 me-2">
+                <i class="moon-icon bi bi-moon-stars" style="font-size: 26px"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <main>
+          <div>
+            <div>
+            <div class="pt-5 ps-lg-5 ps-md-5 ps-sm-3 ps-3" >
+              <h4 class="text-orders-tabl">Список заказов</p>
+            </div>
+
+
+
+
+            <div class="m-5 me-lg-5 me-md-5 me-sm-3 ms-lg-5 ms-md-5 ms-sm-3 ms-3 me-3">
+            <div class="table-responsive">
+          <table class="table text-center">
+  <thead>
+    <tr>
+      <th class="pad-header" scope="col"></th>
+      <th class="pad-header" scope="col">ID</th>
+      <th class="pad-header" scope="col">Номер заказа</th>
+      <th class="pad-header" scope="col">Сумма заказа</th>
+      <th class="pad-header" scope="col">Статус заказа</th>
+      <th class="pad-header" scope="col">Дата заказа</th>
+      <th class="pad-header" scope="col"></th>
+      <th class="pad-header" scope="col"></th>
+      <th class="pad-header" scope="col"><button class="trash-all"><i class="trash-h-icon bi bi-trash3 fs-5 d-flex justify-content-end me-3 align-items-center"></i></button></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="pt-5 pb-5"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+      <th class="pt-5 pb-5" scope="row">1</th>
+      <td class="pt-5 pb-5">000 001</td>
+      <td class="pt-5 pb-5">345 ₽</td>
+      <td class="pt-5 pb-5">Завершён</td>
+      <td class="pt-5 pb-5">12-01-2026</td>
+      <td class="pt-5 pb-5" style="width: 170px;"><button class="border-butt-pod w-auto" style="min-width: 160px;">Подробнее</button></td>
+      <td class="pt-5 pb-5" style="width: 30px"><button class="button-edit d-flex align-items-center"><i class="edit-icon bi bi-pencil-square fs-5 d-flex align-items-center"></i></button></td>
+      <td class="pt-5 pb-5" style="width: 30px"><button class="button-trash d-flex  align-items-center me-3"><i class="trash-icon bi bi-trash3 fs-5 d-flex  align-items-center"></i></button></td>
+    </tr>
+    <tr>
+      <td class="pt-5 pb-5"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>  
+      <th scope="row" class="pt-5 pb-5">2</th>
+      <td class="pt-5 pb-5">000 002</td>
+      <td class="pt-5 pb-5">240 ₽</td>
+      <td class="pt-5 pb-5">Завершён</td>
+      <td class="pt-5 pb-5">12-01-2026</td>
+      <td class="pt-5 pb-5"><button class="border-butt-pod w-auto" style="min-width: 160px;">Подробнее</button></td>
+      <td class="pt-5 pb-5"><button class="button-edit d-flex align-items-center"><i class="edit-icon bi bi-pencil-square fs-5 d-flex align-items-center"></i></button></td>
+      <td class="pt-5 pb-5"  style="width: 30px"><button class="button-trash d-flex  align-items-center"><i class="trash-icon bi bi-trash3 fs-5 d-flex  align-items-center"></i></button></td>
+    </tr>
+    <tr>
+      <td class="pt-5 pb-5"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+      <th class="pt-5 pb-5" scope="row">3</th>
+      <td class="pt-5 pb-5" colspan="">000 003</td>
+      <td class="pt-5 pb-5">1020 ₽</td>
+      <td class="pt-5 pb-5">Завершён</td>
+      <td class="pt-5 pb-5">12-01-2026</td>
+      <td class="pt-5 pb-5"><button class="border-butt-pod w-auto" style="min-width: 160px;">Подробнее</button></td>
+      <td class="pt-5 pb-5"><button class="button-edit d-flex align-items-center"><i class="edit-icon bi bi-pencil-square fs-5 d-flex align-items-center"></i></button></td>
+      <td class="pt-5 pb-5" style="width: 30px"><button class="button-trash d-flex  align-items-center"><i class="trash-icon bi bi-trash3 fs-5 d-flex  align-items-center"></i></button></td>
+    </tr>
+    <tr>
+      <td class="pt-5 pb-5"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> 
+      <th class="pt-5 pb-5" scope="row">4</th>
+      <td class="pt-5 pb-5">000 004</td>
+      <td class="pt-5 pb-5">570 ₽</td>
+      <td class="pt-5 pb-5">Завершён</td>
+      <td class="pt-5 pb-5">12-01-2026</td>
+      <td class="pt-5 pb-5"><button class="border-butt-pod w-auto" style="min-width: 160px ;">Подробнее</button></td>
+      <td class="pt-5 pb-5"><button class="button-edit d-flex align-items-center"><i class="edit-icon bi bi-pencil-square fs-5 d-flex align-items-center"></i></button></td>
+      <td class="pt-5 pb-5" style="width: 30px"><button class="button-trash d-flex  align-items-center"><i class="trash-icon bi bi-trash3 fs-5 d-flex  align-items-center"></i></button></td>
+    </tr>
+  </tbody>
+  <tfoot>
+   <tr>
+    <td class="tr-foot"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr> 
+  </tfoot>
+
+</table>
+</div>
+</div>
+
+          </div>
+        </div>
+        </main>
+
+
+
+          </div>
+    </div>
+
+    <script src="/js/jquery-4.0.0.min"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/js/theme.js"></script>
+  </body>
+
+
+
+</html>

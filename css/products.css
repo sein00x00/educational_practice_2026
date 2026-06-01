@@ -1,0 +1,15 @@
+.pad-header{
+    padding-top:18px !important;
+    padding-bottom: 18px !important;
+}
+
+.button-edit{
+  height: 28px;  
+}
+
+.button-trash{
+  height: 28px;  
+}
+.trash-all{
+    border: none;
+}
