@@ -1,10 +1,7 @@
 $(() => {
     const SCHEMA_LIGHT = 'light';
     const SCHEMA_DARK = 'dark';
-    
-    // ПРАВИЛЬНЫЙ ПУТЬ ДЛЯ GITHUB PAGES
-    const pathCss = '/educational_practice_2026/css';
-    
+    const pathCss = '/css';
     let currentSchema;
 
     const getSchema = () => currentSchema = localStorage.getItem('schema');
@@ -15,24 +12,28 @@ $(() => {
 
     const loadCss = (file) => {
         if (file) {
+            // <link id="#theme-css" rel="stylesheet" href="/css/base.css">
             $("#theme-css").remove();
             $('<link>')
                 .attr({
-                    id: "theme-css",
+                    id: "#theme-css",
                     rel: "stylesheet",
                     href: `${pathCss}/${file}`
                 })
-                .appendTo('head');
+                .appendTo('head')
+            
         }
     }
 
     $('.toggle').on('click', () => {
         currentSchema = currentSchema === SCHEMA_LIGHT 
             ? SCHEMA_DARK
-            : SCHEMA_LIGHT;
-        setSchema(currentSchema);  
-        loadCss(getFileSchema());
+            : SCHEMA_LIGHT
+        setSchema(currentSchema)  
+        loadCss(getFileSchema())
     });
+
+
 
     (() => {        
         currentSchema = getSchema();
@@ -41,5 +42,6 @@ $(() => {
             setSchema(currentSchema);
         }
         loadCss(getFileSchema());
-    })();
-});
+    })()
+
+})
