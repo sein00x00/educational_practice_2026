@@ -1,17 +1,7 @@
 $(() => {
     const SCHEMA_LIGHT = 'light';
     const SCHEMA_DARK = 'dark';
-    
-    // 🔧 АВТОМАТИЧЕСКИ ОПРЕДЕЛЯЕМ ПУТЬ
-    const getBasePath = () => {
-        // Если мы на GitHub Pages
-        if (window.location.hostname === 'sein00x00.github.io') {
-            return '/educational_practice_2026/css';
-        }
-        // Локально
-        return '/css';
-    }
-    
+    const pathCss = '/css';
     let currentSchema;
 
     const getSchema = () => currentSchema = localStorage.getItem('schema');
@@ -22,16 +12,16 @@ $(() => {
 
     const loadCss = (file) => {
         if (file) {
-            // Удаляем старую тему, если есть
+            // <link id="#theme-css" rel="stylesheet" href="/css/base.css">
             $("#theme-css").remove();
             $('<link>')
                 .attr({
-                    id: "theme-css",
+                    id: "#theme-css",
                     rel: "stylesheet",
-                    href: `${getBasePath()}/${file}`
+                    href: `${pathCss}/${file}`
                 })
                 .appendTo('head')
-            console.log('Загружена тема:', `${getBasePath()}/${file}`); // Для отладки
+            
         }
     }
 
@@ -43,6 +33,8 @@ $(() => {
         loadCss(getFileSchema())
     });
 
+
+
     (() => {        
         currentSchema = getSchema();
         if (!currentSchema) {
@@ -51,4 +43,5 @@ $(() => {
         }
         loadCss(getFileSchema());
     })()
+
 })
